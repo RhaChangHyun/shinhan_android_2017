@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {//값을 넘기는 정상 종료일때만
                 String result = data.getStringExtra("Result");
                 EditText editText = (EditText)findViewById(R.id.edittext);
-                startActivity(Intent inte);
+                startActivity(Intent intent);
             }
         }
     }

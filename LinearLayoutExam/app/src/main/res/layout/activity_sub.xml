@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shinhan.linearlayoutexam.SubActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="30"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:text="text"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#ffff"
+        android:background="#ff0000"
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="30"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:background="#f00f"/>
+        <LinearLayout
+            android:Layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientaiotn="vertical"
+                android:text="Text4"
+                android:gravity="bottom|center_horizontal"
+                android:background="#999"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#dddddd"
+                android:text="TEXT04"
+                android:textSize="30dp"
+                android:gravity="top|center"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20" />
+</LinearLayout>
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+     <ImageView
+         android:id="@+id/imageview1"
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="50"
+         android:background="@drawable/a123"/>
+     <ImageView
+         android:id="@+id/imageview2"
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="50"
+         android:background="@drawable/a3"/>
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButton1Clicked"
+            android:text="BUTTON1"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_toRightOf="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButton2Clicked"
+            android:text="BUTTON2"/>
+        </RelativeLayout>
+</LinearLayout>

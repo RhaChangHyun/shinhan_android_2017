@@ -12,7 +12,7 @@ public class SubActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub);
     }
-    public void onButton2Clicked(View view) {
+    public void onButton1Cliked(View view) {
         finish();
     }
         //startActivity(intent);
